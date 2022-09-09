@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `project` (
   `name` VARCHAR(90) NOT NULL,
   `category` VARCHAR(45) NOT NULL,
   `status` VARCHAR(45) NOT NULL,
-  `createdOn` DATETIME NULL,
+  `created_on` DATETIME NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
@@ -45,19 +45,19 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `projectsdb`;
-INSERT INTO `project` (`id`, `name`, `category`, `status`, `createdOn`) VALUES (1, 'Faerie Pot', 'Crafts', 'One Day', NULL);
-INSERT INTO `project` (`id`, `name`, `category`, `status`, `createdOn`) VALUES (2, 'Living Wall', 'Gardening', 'In Progress', NULL);
-INSERT INTO `project` (`id`, `name`, `category`, `status`, `createdOn`) VALUES (3, 'Stain Storage Room Floor', 'Around The House', 'In Progress', NULL);
-INSERT INTO `project` (`id`, `name`, `category`, `status`, `createdOn`) VALUES (4, 'Install Bookshelves', 'Around The House', 'One Day', NULL);
-INSERT INTO `project` (`id`, `name`, `category`, `status`, `createdOn`) VALUES (5, 'Plant Roses', 'Gardening', 'One Day', NULL);
-INSERT INTO `project` (`id`, `name`, `category`, `status`, `createdOn`) VALUES (6, 'Patch Drywall', 'Around The House', 'In Progress', NULL);
-INSERT INTO `project` (`id`, `name`, `category`, `status`, `createdOn`) VALUES (7, 'Stain Deck', 'Around The House', 'Complete', NULL);
-INSERT INTO `project` (`id`, `name`, `category`, `status`, `createdOn`) VALUES (8, 'Peacock Mural', 'Art', 'One Day', NULL);
-INSERT INTO `project` (`id`, `name`, `category`, `status`, `createdOn`) VALUES (9, 'Plant Tree in Front Yard', 'Gardening', 'One Day', NULL);
-INSERT INTO `project` (`id`, `name`, `category`, `status`, `createdOn`) VALUES (10, 'Fuel Injection Conversion', 'Automotive', 'In Progress', NULL);
-INSERT INTO `project` (`id`, `name`, `category`, `status`, `createdOn`) VALUES (11, 'New Shocks on Mazda', 'Automotive', 'Complete', NULL);
-INSERT INTO `project` (`id`, `name`, `category`, `status`, `createdOn`) VALUES (12, 'Resurface Driveway', 'Around The House', 'One Day', NULL);
-INSERT INTO `project` (`id`, `name`, `category`, `status`, `createdOn`) VALUES (13, 'Portfolio Site', 'Professional Development', 'One Day', NULL);
+INSERT INTO `project` (`id`, `name`, `category`, `status`, `created_on`) VALUES (1, 'Faerie Pot', 'Crafts', 'One Day', NULL);
+INSERT INTO `project` (`id`, `name`, `category`, `status`, `created_on`) VALUES (2, 'Living Wall', 'Gardening', 'In Progress', NULL);
+INSERT INTO `project` (`id`, `name`, `category`, `status`, `created_on`) VALUES (3, 'Stain Storage Room Floor', 'Around The House', 'In Progress', NULL);
+INSERT INTO `project` (`id`, `name`, `category`, `status`, `created_on`) VALUES (4, 'Install Bookshelves', 'Around The House', 'One Day', NULL);
+INSERT INTO `project` (`id`, `name`, `category`, `status`, `created_on`) VALUES (5, 'Plant Roses', 'Gardening', 'One Day', NULL);
+INSERT INTO `project` (`id`, `name`, `category`, `status`, `created_on`) VALUES (6, 'Patch Drywall', 'Around The House', 'In Progress', NULL);
+INSERT INTO `project` (`id`, `name`, `category`, `status`, `created_on`) VALUES (7, 'Stain Deck', 'Around The House', 'Complete', NULL);
+INSERT INTO `project` (`id`, `name`, `category`, `status`, `created_on`) VALUES (8, 'Peacock Mural', 'Art', 'One Day', NULL);
+INSERT INTO `project` (`id`, `name`, `category`, `status`, `created_on`) VALUES (9, 'Plant Tree in Front Yard', 'Gardening', 'One Day', NULL);
+INSERT INTO `project` (`id`, `name`, `category`, `status`, `created_on`) VALUES (10, 'Fuel Injection Conversion', 'Automotive', 'In Progress', NULL);
+INSERT INTO `project` (`id`, `name`, `category`, `status`, `created_on`) VALUES (11, 'New Shocks on Mazda', 'Automotive', 'Complete', NULL);
+INSERT INTO `project` (`id`, `name`, `category`, `status`, `created_on`) VALUES (12, 'Resurface Driveway', 'Around The House', 'One Day', NULL);
+INSERT INTO `project` (`id`, `name`, `category`, `status`, `created_on`) VALUES (13, 'Portfolio Site', 'Professional Development', 'One Day', NULL);
 
 COMMIT;
 

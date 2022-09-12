@@ -18,6 +18,7 @@ public class Project {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String name;
+	private String description;
 	private String category;
 	private String status;
 	
@@ -30,14 +31,15 @@ public class Project {
 	}
 
 
-	public Project(int id, String name, String category, String status) {
+	public Project(int id, String name, String description, String category, String status, LocalDateTime createdOn) {
 		super();
 		this.id = id;
 		this.name = name;
+		this.description = description;
 		this.category = category;
 		this.status = status;
+		this.createdOn = createdOn;
 	}
-
 
 	public int getId() {
 		return id;
@@ -56,6 +58,16 @@ public class Project {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+
+	public String getDescription() {
+		return description;
+	}
+
+
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 

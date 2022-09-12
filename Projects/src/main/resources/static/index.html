@@ -8,6 +8,31 @@
 <body>
 
 	<h1>Welcome to The Project Depot</h1>
-	<div id="projectList"></div>
+	
+	<form name="myForm">
+		<h1>Add A New Project:</h1>
+	  	<label for="name">Project Name</label><input type="text" name="name" placeholder="Project Name" required/><br>
+	  	<label for="description">Description</label><textarea rows="5" cols="40" name="description" placeholder="Description" required/></textarea><br>
+	    <label for="category">Category</label><select name="category" id="category" placeholder="Category" required>
+		     <option value="Around The House">Around The House</option>
+		     <option value="Art">Art</option>
+		     <option value="Automotive">Automotive</option>
+		     <option value="Crafts">Crafts</option>
+		     <option value="Gardening">Gardening</option>
+		     <option value="Professional Development">Professional Development</option>
+		     </select><br>
+	     <label for="status">Status</label><select name="status" id="status" placeholder="Status">
+	        <option value="One Day">One Day</option>
+	        <option value="In Progress">In Progress</option>
+	        <option value="Complete">Complete</option>
+	      	</select><br>
+	  	
+	  	<button name="addProject">Submit</button>
+  
+  	</form><br><br>
+    <div id="projectDetails"></div><br><br>
+	<div id="updateForm"></div><br><br>
+	<div id="fullList"></div><br><br>
+  
 </body>
 </html>

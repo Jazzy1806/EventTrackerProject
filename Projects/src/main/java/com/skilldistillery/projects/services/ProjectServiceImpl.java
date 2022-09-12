@@ -53,6 +53,9 @@ public class ProjectServiceImpl implements ProjectService{
 	        if(project.getName() != null) {
 	            updated.setName(project.getName());
 	        }
+	        if(project.getDescription() != null) {
+	        	updated.setDescription(project.getDescription());
+	        }
 	        if(project.getCategory() != null) {
 	            updated.setCategory(project.getCategory());
 	        }

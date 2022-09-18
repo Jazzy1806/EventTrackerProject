@@ -90,7 +90,7 @@ let displayProjects = function (projectList) {
 
 	let listHeader = document.createElement('h1');
 	listHeader.innerHTML = "There are " + projectList.length + " projects in the queue. The average time to complete a project is typically 6 hours." +
-							"\n The estimated amount of time to complete all of the projects is " + (projectList.length * 6) + " hours.";
+							"The estimated amount of time to complete all of the projects is " + (projectList.length * 6) + " hours.";
 	listDiv.appendChild(listHeader);
 
   let table = document.createElement('table');
@@ -266,14 +266,30 @@ function displayProject(project) {
 	  input.setAttribute('name', 'category');
 	  input.setAttribute('value', project.category);
 	  form.appendChild(input);
+  let categories = ['Around The House', 'Art', 'Automotive', 'Crafts', 'Gardening', 'Professional Development'];
+  for (let c of categories) {
+	  let option = document.createElement('option');
+	    option.setAttribute('value', c);
+	  	option.textContent = c;
+	  	if (c === project.category) {
+			option.innerText('selected');
+		}
+	  	input.appendChild(option);
+	
+  }
+  /*
   let option = document.createElement('option');
     option.setAttribute('value', 'Around The House');
   	option.textContent = "Around The House";
   	input.appendChild(option);
+  	
+  	
   option = document.createElement('option');
     option.setAttribute('value', 'Art');
   	option.textContent = "Art";
   	input.appendChild(option);
+  	
+  	
   option = document.createElement('option');
     option.setAttribute('value', 'Automotive');
   	option.textContent = "Automotive";
@@ -290,6 +306,7 @@ function displayProject(project) {
     option.setAttribute('value', 'Professional Development');
   	option.textContent = "Professional Development";
   	input.appendChild(option);
+  */
 
   label = document.createElement('label');
   	label.textContent = 'Status';
